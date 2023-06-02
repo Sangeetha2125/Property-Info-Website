@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
-    <div>
+    <div class="header">
+        <img src="images/logo.png" alt="">
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
             <p><a href="#overview">Overview</a></p>
-            <p><a href="#pricelist">PriceList</a></p>
-            <p><a href="highlights">Highlights</a></p>
-            <p><a href="amenities">Amenities</a></p>
-            <p><a href="map">Map</a></p>
-            <p><a href="connectivity">Connectivity</a></p>
-            <p><a href="gallery"></a>Gallery</p>
-            <p><a href="contact"></a>Contact-Us</p>
-
-
-        </nav>
-
+            <p><a href="#pricelist">Price List</a></p>
+            <p><a href="#highlights">Highlights</a></p>
+            <p><a href="#amenities">Amenities</a></p>
+            <p><a href="#map">Map</a></p>
+            <p><a href="#connectivity">Connectivity</a></p>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#contact">Contact-Us</a></p>
+        </nav>     
+    </div>
+    <div class="banner"></div>
+    <div class="welcome-content">
         <div class="heading-container">
             <h1>Greater Noida West </h1>
-            <h2>Office Space,Retail Space</h2>
-            <h1>40* Lakh Onwards</h1>
-            <h3>Enquire Now!</h3>
+            <p>Office Space,Retail Space</p>
+            <h3>₹40* Lakh Onwards</h3>
+            <a>Enquire Now!</a>
         </div>
-
         <div class="form-container">
-            <input placeholder="Name">
-            <input placeholder="Email-id">
-            <input placeholder="Mobile-No">
-            <input placeholder="Comments">
-            <button type="submit" >Submit</button>
+            <form action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email-id">
+                <input type="number" placeholder="Enter Your Mobile-No">
+                <input type="text" placeholder="Write down your Comments">
+                <button type="submit" >Submit</button>
+            </form>
         </div>
     </div>
-
+    <br><br><br><br><br><br>
     <div class="overview-container" id="overview">
         <h1>Overview</h1>
         <div class="overview-info">
@@ -44,16 +50,27 @@
             <li>Iconic twin tower design for office spaces</li>
         </div>
     </div>
-
     <div class="pricelist-container" id="pricelist">
-        
-
-
     </div>
-    
-
-
-
+    <div class="form-popup">
+        <div class="form-content">
+            <img src="images/form-bg.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" title="Close Signup Form">&times;</span>
+                <h1>Greater Noida West </h1>
+                <p>Office Space,Retail Space</p>
+                <h2>₹40* Lakh Onwards</h2>
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email-id">
+                    <input type="number" placeholder="Enter Your Mobile-No">
+                    <input type="text" placeholder="Write down your Comments">
+                    <button type="submit" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
 

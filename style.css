@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+.header{
+    padding:.7em 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    width: 6%;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    font-size: 1.3em;
+}
+.header nav p{
+    display: inline-block;
+    font-size: 1.04em;
+}
+#menu-btn{
+    display: none;
+}
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.39)),url('images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 72vh;
+    position: relative;
+}
+.welcome-content{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 6vw;
+    align-items:start;
+}
+.heading-container{
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 1.75;
+    letter-spacing: 2px;
+}
+.heading-container h1,.heading-container p,.heading-container h3{
+    color: white;
+}
+.heading-container p{
+    font-size: 1.1em;
+    margin-top: -.3em;
+}
+.heading-container a{
+    color: rgb(255, 221, 0);
+}
+.heading-container a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.form-container{
+    width: 35%;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-container input,.form-container button{
+    width: 80%;
+    margin-bottom: 1.5em;
+    padding: 0.55em;
+    font-size: 1.15vw;
+    border-radius: 6px;
+}
+.form-container input::placeholder{
+    color: black;
+}
+.form-container button{
+    border-radius: 8px;
+    background-color: rgba(9, 136, 175, 0.684);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.form-popup{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.form-popup .form-content{
+    width: 48%;
+    background-color: white;
+    margin: 6em auto;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.form-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.form-content img{
+    width: 95%;
+    height: 65vh;
+    object-fit: cover;
+    filter: grayscale(0.5);
+}
+.form-heading{
+    line-height: 2.3em;
+}
+.form-heading form{
+    margin: 2em 0;
+}
+.form-heading form input{
+    display: block;
+    border:1px solid black;
+    padding: 0.5em;
+    font-size: 1.24vw;
+    width: 95%;
+    margin: 0.8em 0;
+    border-radius: 5px;
+}
+.form-heading p{
+    color: rgb(1, 1, 110);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.form-heading h2{
+    color: rgb(1, 119, 1);
+}
+.form-heading form button{
+    width: 95%;
+    background-color: rgb(5, 121, 142);
+    padding: 0.5em;
+    font-size: 1.24vw;
+    color: white;
+    border-radius: 5px;
+}
+.form-heading form input::placeholder{
+    color: black;
+}
+.close-modal{
+    display: block;
+    text-align: end;
+    margin: 0.4em 0.3em;
+    font-size: 2.5em;
+}
+.form-popup{
+    display: none;
+}
+@media screen and (min-width:1000px) {
+    .header p::after{
+        content: "";
+        display: block;
+        height: 3.5px;
+        transform: scaleX(0);
+        background-color:black;
+        transition: transform 300ms;
+    }
+    .header p:hover::after{
+        transform: scaleX(1);
+    }  
+}
+@media screen and (max-width:1000px) {
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+        display: block;
+        top:99%;
+        left:0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar-container{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header nav p:nth-child(1){
+        border-top: 1px solid black;
+    }
+    .header nav p{
+        display: block;
+        text-align: center;
+        padding: 0.8em;
+        border-bottom: 1px solid black;
+    }
+    .header nav a:hover{
+        color: darkblue;
+    }
+    .header img{
+        width: 15%;
+    }
+    #menu-btn{
+        display: block;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1.3em;
+    }
+    .open-menu{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
