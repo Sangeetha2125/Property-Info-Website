@@ -50,13 +50,61 @@
             <li>Hi-Street Retail Admeasuring over 8 Lakh Sq.ft., Offering more than 100 outlets</li>
             <li>Iconic twin tower design for office spaces</li>
             </div>
-        <div class="sidenav"></div>
+          <div class="sidenav"></div> 
         </div>
     </div>
 
     <div class="pricelist-container" id="pricelist">
 
     </div>
+
+    <!-- gallery section -->
+    <section>
+        <h1 id="h1">Gallery</h1>
+        <div class="gallery-wrap">
+            <img src="images/gallery/arrow_left.png" height="30px" width="30px" id="backbtn">
+
+            <div class="gallery">
+
+                <div class="box1">
+                  <span><img src="images/gallery/sky-deck1.jpg"></span>
+                  <span><img src="images/gallery/space1.jpg"></span>
+                  <span><img src="images/gallery/sky-deck2.jpg"></span>
+                </div>
+      
+                <div class="box2">
+                  <span><img src="images/gallery/theme-park1.jpg"></span>
+                  <span><img src="images/gallery/sky-deck3.jpg"></span>
+                  <span><img src="images/gallery/theme-park2.jpg"></span>
+                </div>
+      
+              </div>
+
+            <img src="images/gallery/arrow_right.png" height="30px" width="30px" id="nextbtn">
+        </div>
+    </section>
+
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backbtn = document.getElementById("backbtn");
+        let nextbtn = document.getElementById("nextbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehaviour = "auto";
+        });
+
+        nextbtn.addEventListener("click", ()=> {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 1250;
+        });
+
+        backbtn.addEventListener("click", ()=> {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 1250;
+        });
+    </script>
 </body>
 </html>
 
