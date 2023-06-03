@@ -287,7 +287,89 @@ html{
     height: 400px;
     width: 380px;
 }
-
+/* connectivity */
+.connectivity-section{
+    text-align: center;
+}
+.connectivity-section h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+.connectivity-container{
+    background:linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.39)),url('images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2em auto;
+}
+.connectivity-wrap{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 120px 100px;
+}
+.connectivity-wrap span{
+    padding: 0px;
+    color: white;
+}
+.connectivity-wrap img{
+    padding: 15px 0px;
+    width: 260px;
+}
+/* footer */
+.footer-column{
+    margin: 50px 0px 0px 0px;
+    background-color:rgb(5, 121, 142);
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
+.footer-column1{
+    padding-right: 22%;
+}
+.footer-column h3, .footer-column a, .footer-column i, .footer-column p{   
+    color: white;
+}
+.footer-column i{
+    padding-right: 12px;
+}
+.footer-column h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.footer-form{
+    text-align: center;
+}
+.footer-form input, .footer-form button{
+    width: 450px;
+    padding: 8px;
+    margin: 10px 0px;
+}
+.footer-form input{
+    border: 2px solid rgb(2, 101, 118);
+}
+.footer-form input:focus{
+    border: 2px solid black;
+}
+.footer-form button{
+    color: black;
+    background-color: rgb(255, 221, 0);
+    font-weight: 550;
+    font-size: large;
+}
+.footer-form button:hover{
+    background-color: rgb(251, 230, 95);
+    cursor: pointer;
+}
+.footer-form button:active{
+	transform: scale(0.95);
+}
+.footer-bottom{
+    padding: 20px;
+    text-align: center;
+}
 /* Media Queries */
 @media screen and (min-width:1000px) {
     .header p::after{
