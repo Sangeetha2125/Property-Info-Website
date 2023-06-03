@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -17,10 +20,11 @@
             <p><a href="#pricelist">Price List</a></p>
             <p><a href="#highlights">Highlights</a></p>
             <p><a href="#amenities">Amenities</a></p>
+            <p><a href="#floor-plan">Floor Plan</a></p>
             <p><a href="#map">Map</a></p>
             <p><a href="#connectivity">Connectivity</a></p>
             <p><a href="#gallery">Gallery</a></p>
-            <p><a href="#contact">Contact-Us</a></p>
+            <p><a href="#contact">Contact Us</a></p>
         </nav>     
     </div>
 
@@ -49,8 +53,8 @@
         <div class="overview-container" id="overview">
             <h1>Overview</h1>
             <div class="overview-info">
-                <img class="method1" src="images\twintowers.jpg">
-                <img class="method2" src="images\overview-1.jpg">
+                <img class="method1" src="images/twintowers.jpg">
+                <img class="method2" src="images/overview-1.jpg">
                 <div>
                     <h2>GRANDTHUM</h2>
                     <h4>GREATER NOIDA WEST</h4>
@@ -111,6 +115,76 @@
         </div>
     </div>
 
+    <!-- Amenities Section -->
+    <div class="amenities-container" id="amenities">
+        <h1>Amenities</h1>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides amenities">
+                <li class="glide__slide" style="background-image: url(images/amenities/green-building.jpg);">
+                    <div class="amenities-content">
+                        <h3 class="timeline-title">IGBC PRE-CERTIFIED GREEN BUILDING</h3>
+                        <p class="timeline-text">We understand the impact of carbon footprint on our environment which is why our building stock uses eco-friendly construction material to improve energy and water efficiency to create a healthier and sustainable environment.</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/sky-deck.jpg);">
+                    <div class="amenities-content">
+                        <h3 class="timeline-title">SKY DECK</h3>
+                        <p class="timeline-text">At Grandthum, the essence of design is fluidity, that is allowing movement that breaks barriers and helps create interaction and a sense of community</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/hyper-market.jpg);">
+                    <div class="amenities-content">
+                        <h3 class="timeline-title">HYPER MARKET</h3>
+                        <p class="timeline-text">A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/multiplex.jpg);">
+                    <div class="amenities-content">
+                        <h3 class="timeline-title">5 SCREEN MULTIPLEX</h3>
+                        <p class="timeline-text">We can't talk about an entertainment destination without talking about movies. The multiplex at Grandthum ensures that viewers get their finest movie experience here.</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/yatch.jpg);">
+                    <div class="amenities-content">
+                        <h3 class="timeline-title">WATER BODY WITH YACHT</h3>
+                        <p class="timeline-text">Imagine a serene evening with the aroma of the food in the air and a pleasant coolness from the water surrounding you. That is how an open air dining experience will be at the Yacht Garden.</p>
+                    </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floor Plan Section -->
+    <div class="floor-container" id="floor-plan">
+        <h1>Floor Plan</h1>
+        <div class="floor-image-container">
+            <img src="images/fp-1.jpg">
+            <img src="images/fp-2.jpg">
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <h2>Location</h2>
+        <img src="images/map-location.jpg">
+    </div>
+
+    <!-- Connectivity Section -->
+    <section class="connectivity-section" id="connectivity">
+        <h1 id="h1">Connectivity</h1>
+      <div class="connectivity-container">
+        <div class="connectivity-wrap">
+            <span>Closed Proximity<img src="images/mobDotLine.png">Proposed Metro Station</span>
+            <span>Near<img src="images/mobDotLine.png">Upcoming Noide International Airport</span>
+            <span>16 km<img src="images/mobDotLine.png">Sector 18 Noida</span>
+            <span>23km Approx<img src="images/mobDotLine.png">Akshardham temple</span>
+            <span>Closed Proximity<img src="images/mobDotLine.png">Multinational and Corporates</span> 
+        </div>
+      </div>
+    </section>
+
     <!-- Gallery Section -->
     <section class="gallery-section" id="gallery">
         <h1 id="h1">Gallery</h1>
@@ -131,6 +205,45 @@
             <img src="images/gallery/arrow_right.png" height="30px" width="30px" id="nextbtn">
         </div>
     </section>
+
+    <!-- Footer section -->
+    <footer id="contact">
+        <div class="footer-column">
+
+        <div class="footer-column1">
+            <h3>About Us</h3>
+            <p>Grandthum is a name to trust upon in the Real Estate Domain. Having a rich wealth of knowledge and expertise in Realty domain, they are well known among the customers. They are committed to giving their customers complete satisfaction while buying the commercial space. While planning, every small detail has been taken care of with all the major amenities incorporated. They boast of a strong team of engineers and architects who are highly skilled and committed to building finest structures that offer dream homes to people. The company has taken special care to handle such issues with their state-of-the-art solutions especially meant for the same.
+            </p>
+            <br>
+            <p><a href="#"><i class="fa fa-envelope"></i>info@example.com</p>
+            <br>
+            <p><a href="#"><i class="fa fa-phone"></i>123-456-7890</p>
+        </div>
+
+        <div class="footer-column2">
+            <h3>Contact Us</h3>
+            <form action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email-id">
+                <input type="number" placeholder="Enter Your Mobile-No">
+                <input type="text" placeholder="Write down your Comments">
+                <button type="submit" >Submit</button>
+            </form>
+            <!-- <div class="footer-column3">
+                <h3>Follow Us</h3>
+                <ul class="social-media-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div> -->
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+        &copy; 2023 Your Website. All rights reserved.
+        </div>
+    </footer>
     
     <!-- Form Popup Section -->
     <div class="form-popup">
@@ -153,6 +266,17 @@
     </div>
 
 </body>
-<script src="script.js"></script>
-</html>
 
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="glider.js"></script>
+<script>
+    const config ={
+        type:'carousel',
+        perView:1,
+        autoplay:3000,
+    }  
+    new Glide('.glide',config).mount()
+</script>
+
+</html>
