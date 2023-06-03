@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 <head>
-    
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-
 <body>
-    <div>
+
+    <!-- Navbar Section -->
+    <div class="header">
+        <img src="images/logo.png" alt="">
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
             <p><a href="#overview">Overview</a></p>
-            <p><a href="#pricelist">PriceList</a></p>
+            <p><a href="#pricelist">Price List</a></p>
             <p><a href="#highlights">Highlights</a></p>
             <p><a href="#amenities">Amenities</a></p>
             <p><a href="#map">Map</a></p>
             <p><a href="#connectivity">Connectivity</a></p>
-            <p><a href="#gallery"></a>Gallery</p>
-            <p><a href="#contact"></a>Contact-Us</p>
-
-
-        </nav>
-
-        <div class="heading-container">
-            <h1>Greater Noida West </h1>
-            <h2>Office Space,Retail Space</h2>
-            <h1>40* Lakh Onwards</h1>
-            <h3>Enquire Now!</h3>
-        </div>
-
-        <div class="form-container">
-            <input placeholder="Name">
-            <input placeholder="Email-id">
-            <input placeholder="Mobile-No">
-            <input placeholder="Comments">
-            <button type="submit" >Submit</button>
-        </div>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#contact">Contact-Us</a></p>
+        </nav>     
     </div>
 
+    <!-- Welcome Section -->
+    <div class="banner"></div>
+    <div class="welcome-content">
+        <div class="heading-container">
+            <h1>Greater Noida West </h1>
+            <p>Office Space,Retail Space</p>
+            <h3>₹40* Lakh Onwards</h3>
+            <a>Enquire Now!</a>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email-id">
+                <input type="number" placeholder="Enter Your Mobile-No">
+                <input type="text" placeholder="Write down your Comments">
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Overview Section -->
     <div class="overview-container" id="overview">
-        <h1 id="h1">Overview</h1>
+        <h1>Overview</h1>
         <div class="overview-info">
-            <img src="images\twintowers.jpg">
-            <img src="images\overview-1.jpg">
+            <img class="method1" src="images\twintowers.jpg">
+            <img class="method2" src="images\overview-1.jpg">
             <div>
                 <h2>GRANDTHUM</h2>
                 <h4>GREATER NOIDA WEST</h4>
@@ -53,10 +60,10 @@
         </div>
     </div>
 
+    <!-- Pricelist Section -->
     <div class="pricelist-container" id="pricelist">
         <h1>PRICE LIST</h1>
         <h4>RANDTHUM OFFERS RETAIL SPACE AND OFFICE SPACE WHERE EACH SPACE IS DESIGNATED TO OFFER COMFORT, AND STUNNING VIEWS.</h4>
-
         <div class="office-space">
             <h2>OFFICE SPACES</h2>
             <h3>Price</h3>
@@ -64,7 +71,6 @@
             <p>Work Spaces presents new opportunities. Office Spaces here offer a platform to take your business to next level of growth with an amalgamation of working and networking..</p>
             <button>Contact Us</button>
         </div>
-
         <div class="retail-space">
             <h2>RETAIL SPACE</h2>
             <h3>Price</h3>
@@ -74,6 +80,7 @@
         </div>
     </div>
 
+    <!-- Highlights Section -->
     <div class="highlights-container" id="highlights">
         <div class="adventure">
             <h4>Adventure</h4>
@@ -101,29 +108,48 @@
         </div>
     </div>
 
-    <div class="gallery-container">
-        <img src="images\arrow_left.png" id="backbtn" />
-        <div class="gallery1">
-            <span><img src="images\sky-deck1.jpg"/></span>
-            <span><img src="images\sky-deck2.jpg" /></span>
-            <span><img src="images\sky-deck3.jpg" /></span>
-
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h1 id="h1">Gallery</h1>
+        <div class="gallery-wrap">
+            <img src="images/gallery/arrow_left.png" height="30px" width="30px" id="backbtn">
+            <div class="gallery">
+                <div class="box1">
+                  <span><img src="images/gallery/sky-deck1.jpg"></span>
+                  <span><img src="images/gallery/space1.jpg"></span>
+                  <span><img src="images/gallery/sky-deck2.jpg"></span>
+                </div>
+                <div class="box2">
+                  <span><img src="images/gallery/theme-park1.jpg"></span>
+                  <span><img src="images/gallery/sky-deck3.jpg"></span>
+                  <span><img src="images/gallery/theme-park2.jpg"></span>
+                </div>  
+            </div>
+            <img src="images/gallery/arrow_right.png" height="30px" width="30px" id="nextbtn">
         </div>
-        <div class="gallery2">
-            <span><img src="images\space1.jpg"/></span>
-            <span><img src="images\theme-park1.jpg"/></span>
-            <span><img src="images\theme-park2.jpg"/></span>
-
+    </section>
+    
+    <!-- Form Popup Section -->
+    <div class="form-popup">
+        <div class="form-content">
+            <img src="images/form-bg.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" title="Close Signup Form">&times;</span>
+                <h1>Greater Noida West </h1>
+                <p>Office Space,Retail Space</p>
+                <h2>₹40* Lakh Onwards</h2>
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email-id">
+                    <input type="number" placeholder="Enter Your Mobile-No">
+                    <input type="text" placeholder="Write down your Comments">
+                    <button type="submit" >Submit</button>
+                </form>
+            </div>
         </div>
-        <img src="images\arrow_right.png" id="frontbtn"/>
-
     </div>
 
-
-    
-
-
-
 </body>
+<script src="script.js"></script>
 </html>
 
