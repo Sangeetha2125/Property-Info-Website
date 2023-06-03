@@ -354,6 +354,7 @@ input, button{
 form button{
     color: white;
 }
+
 /* Media Queries */
 @media screen and (min-width:1000px) {
     .header p::after{
