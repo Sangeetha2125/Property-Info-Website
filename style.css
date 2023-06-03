@@ -288,13 +288,46 @@ html{
     height: 400px;
     width: 380px;
 }
+/* connectivity */
+.connectivity-section{
+    text-align: center;
+}
+.connectivity-section h1{
+    padding-bottom: 40px;
+}
+.connectivity-container{
+    background:linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.39)),url('images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.connectivity-wrap{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 120px 100px;
+}
+.connectivity-wrap span{
+    padding: 0px;
+    color: white;
+}
+.connectivity-wrap img{
+    padding: 15px 0px;
+    width: 260px;
+}
+
+/* footer */
 .footer-column{
+    margin: 50px 0px 0px 0px;
     background-color:rgb(5, 121, 142);
     display: flex;
     flex-direction: row;
+    padding: 80px;
 }
-.footer-column1, .footer-column2, .footer-column3{
-    padding: 20px 30px;
+.footer-column1{
+    padding-right: 20%;
 }
 h3, p, i, a{   
     color: white;
@@ -310,9 +343,16 @@ form{
     text-align: center;
 }
 input, button{
+    width: 500px;
     padding: 5px;
     margin: 10px 0px;
-    border: 1px;
+}
+.footer-bottom{
+    padding: 20px;
+    text-align: center;
+}
+form button{
+    color: white;
 }
 /* Media Queries */
 @media screen and (min-width:1000px) {
@@ -370,9 +410,4 @@ input, button{
     .open-menu{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-}
-
-
-.floor-container,.map-container,.highlights-container,.pricelist-container{
-    display: none;
 }
