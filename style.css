@@ -288,32 +288,7 @@ html{
     height: 400px;
     width: 380px;
 }
-.footer-column{
-    background-color:rgb(5, 121, 142);
-    display: flex;
-    flex-direction: row;
-}
-.footer-column1, .footer-column2, .footer-column3{
-    padding: 20px 30px;
-}
-h3, p, i, a{   
-    color: white;
-}
-i{
-    padding-right: 12px;
-}
-h3{
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-form{
-    text-align: center;
-}
-input, button{
-    padding: 5px;
-    margin: 10px 0px;
-    border: 1px;
-}
+
 /* Media Queries */
 @media screen and (min-width:1000px) {
     .header p::after{
