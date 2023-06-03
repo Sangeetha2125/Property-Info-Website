@@ -374,3 +374,8 @@ input, button{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
+
+
+.floor-container,.map-container,.highlights-container,.pricelist-container{
+    display: none;
+}
