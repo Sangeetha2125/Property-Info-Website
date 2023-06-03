@@ -75,10 +75,6 @@ html{
 .heading-container a{
     color: rgb(255, 221, 0);
 }
-.heading-container a:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
 .form-container{
     width: 35%;
 }
@@ -173,6 +169,7 @@ html{
     font-size: 2.5em;
 }
 .form-popup{
+    z-index: 99999;
     display: none;
 }
 
