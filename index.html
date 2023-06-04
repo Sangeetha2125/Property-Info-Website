@@ -38,11 +38,11 @@
             <a>Enquire Now!</a>
         </div>
         <div class="form-container">
-            <form action="">
-                <input type="text" id="name" placeholder="Enter Your Name">
-                <input type="email" id="email" placeholder="Enter Your Email-id">
-                <input type="number" id="mobile" placeholder="Enter Your Mobile-No">
-                <input type="text" id="comment" placeholder="Write down your Comments">
+            <form id="formid1">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+                <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
                 <button type="submit" id="submitbtn">Submit</button>
             </form>
         </div>
@@ -68,30 +68,33 @@
     </div>
 
     <!-- Highlights Section -->
-    <div class="highlights-container" id="highlights">
-        <div class="adventure">
-            <h4>Adventure</h4>
-            <p>Complete retail destination with a thrilling and enjoyable experience at Adventure Island (Amusement park).</p>
-        </div>
-        <div class="destination">
-            <h4>Best Destination</h4>
-            <p>The perfect place for short family breaks and a shopaholic's paradise</p>
-        </div>
-        <div class="hypermarket">
-            <h4>Hypermarket </h4>
-            <p>A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR.</p>
-        </div>
-        <div class="waterfall">
-            <h4>Waterfall</h4>
-            <p>Water Showers Located within the shopping center which would help you to relax in the open air.</p>
-        </div>
-        <div class="outlet">
-            <h4>Retail Outlets</h4>
-            <p>This shopping arcade has more than 100 outlets which includes F & B retail outlets.</p>
-        </div>
-        <div class="restaurant">
-            <h4>restaurant</h4>
-            <p>Multi cuisine foodcourt with fine dining and specialty snacks and various restaurants.</p>
+    <div class="highlights-section" id="highlights">
+        <h1>Highlights</h1>
+        <div class="highlights-container">     
+            <div class="h1-item">
+                <h4>Adventure</h4>
+                <p>Complete retail destination with a thrilling and enjoyable experience at Adventure Island (Amusement park).</p>
+            </div>
+            <div class="h1-item">
+                <h4>Best Destination</h4>
+                <p>The perfect place for short family breaks and a shopaholic's paradise</p>
+            </div>
+            <div class="h1-item">
+                <h4>Hypermarket </h4>
+                <p>A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR.</p>
+            </div> 
+            <div class="h1-item">
+                <h4>Waterfall</h4>
+                <p>Water Showers Located within the shopping center which would help you to relax in the open air.</p>
+            </div>
+            <div class="h1-item">
+                <h4>Retail Outlets</h4>
+                <p>This shopping arcade has more than 100 outlets which includes F & B retail outlets.</p>
+            </div>
+            <div class="h1-item">
+                <h4>Restaurant</h4>
+                <p>Multi cuisine foodcourt with fine dining and specialty snacks and various restaurants.</p>
+            </div>   
         </div>
     </div>
 
@@ -135,11 +138,11 @@
             </div>
         </div>
     </div>
+
     <!-- Pricelist Section -->
     <div class="pricelist-section"  id="pricelist">
         <div class="pricelist-container">
             <h1>Price List</h1>
-            <!-- <h4>GRANDTHUM OFFERS RETAIL SPACE AND OFFICE SPACE WHERE EACH SPACE IS DESIGNATED TO OFFER COMFORT, AND STUNNING VIEWS.</h4> -->
             <div class="pricelist-grid">
                 <div class="office-space">
                     <h2 class="space">OFFICE SPACE</h2>
@@ -161,18 +164,26 @@
 
     <!-- Floor Plan Section -->
     <div class="floor-container" id="floor-plan">
-        <h1>Floor Plan</h1>
+        <div class="floor-container-heading">
+            <h1>Floor Plan</h1>
+        </div>    
         <div class="floor-image-container">
-            <img src="images/fp-1.jpg">
-            <img src="images/fp-2.jpg">
+            <img src="images/fp-1.jpeg">
+            <img src="images/fp-2.jpeg">
         </div>
     </div>
 
     <!-- Map Section -->
     <div class="map-container" id="map">
-        <h2>Location</h2>
-        <img src="images/map-location.jpg">
+        <div class="sidenav-map"></div>
+        <div class="heading-map">
+            <h1>Location</h1>
+        </div>
+        <div class="map-image">
+            <img src="./images/map.jpeg">
+        </div>     
     </div>
+
 
     <!-- Connectivity Section -->
     <section class="connectivity-section" id="connectivity">
@@ -210,41 +221,31 @@
     </section>
 
     <!-- Footer section -->
-    <footer id="contact">
-        <div class="footer-column">
-
-        <div class="footer-column1">
+    <footer>
+        <div class="footer-column">  
+          <div class="footer-column1">
             <h3>About Us</h3>
-            <p>Grandthum is a name to trust upon in the Real Estate Domain. Having a rich wealth of knowledge and expertise in Realty domain, they are well known among the customers. They are committed to giving their customers complete satisfaction while buying the commercial space. While planning, every small detail has been taken care of with all the major amenities incorporated. They boast of a strong team of engineers and architects who are highly skilled and committed to building finest structures that offer dream homes to people. The company has taken special care to handle such issues with their state-of-the-art solutions especially meant for the same.
+            <p>Grandthum is a name to trust upon in the Real Estate Domain. Having a rich wealth of knowledge and expertise in Realty domain, they are well known among the customers. They are committed to giving their customers complete satisfaction while buying the commercial space. While planning, every small detail has been taken care of with all the major amenities incorporated. They boast of a strong team of engineers and architects who are highly skilled and committed to building finest structures that offer dream homes to people. The company has taken special care to handle such issues with their state-of-the-art solutions especially meant for the same. <br>
+            Others Projects - Cyberthum, Technopark, Alphathum, Citycenter150
             </p>
             <br>
             <p><a><i class="fa fa-envelope"></i>info@example.com</p>
             <br>
             <p><a><i class="fa fa-phone"></i>123-456-7890</p>
-        </div>
-
-        <div class="footer-column2">
+          </div>   
+          <div class="footer-column2">
             <h3>Contact Us</h3>
-            <!-- <form action="">
-                <input type="text" placeholder="Enter Your Name">
-                <input type="email" placeholder="Enter Your Email-id">
-                <input type="number" placeholder="Enter Your Mobile-No">
-                <input type="text" placeholder="Write down your Comments">
-                <button type="submit" >Submit</button>
-            </form> -->
-            <!-- <div class="footer-column3">
-                <h3>Follow Us</h3>
-                <ul class="social-media-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div> -->
-        </div>
-        </div>
-
+            <form class="footer-form" id="formid2">
+                <input type="text" id="name2" name="name2" placeholder="Enter Your Name">
+                <input type="email" id="email2" name="email2" placeholder="Enter Your Email-id">
+                <input type="number" id="mobile2" name="mobile2" placeholder="Enter Your Mobile-No">
+                <input type="text" id="comment2" name="comment2" placeholder="Write down your Comments">
+                <button type="submit" id="submitbtn2">Submit</button>
+            </form>
+          </div>
+        </div> 
         <div class="footer-bottom">
-        &copy; 2023 Your Website. All rights reserved.
+          &copy; 2023 Your Website. All rights reserved.
         </div>
     </footer>
     
@@ -257,7 +258,7 @@
                 <h1>Greater Noida West </h1>
                 <p>Office Space,Retail Space</p>
                 <h2>₹40* Lakh Onwards</h2>
-                <form>
+                <form id="formid">
                     <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
                     <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
                     <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
