@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -14,14 +17,14 @@
         <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
             <p><a href="#overview">Overview</a></p>
-            <p><a href="#pricelist">Price List</a></p>
             <p><a href="#highlights">Highlights</a></p>
             <p><a href="#amenities">Amenities</a></p>
+            <p><a href="#pricelist">Price List</a></p>
+            <p><a href="#floor-plan">Floor Plan</a></p>
             <p><a href="#map">Map</a></p>
             <p><a href="#connectivity">Connectivity</a></p>
             <p><a href="#gallery">Gallery</a></p>
-            <p><a href="#floor-plan">Floor Plan</a></p>
-            <p><a href="#contact">Contact-Us</a></p>
+            <p><a id="#contact">Contact Us</a></p>
         </nav>     
     </div>
 
@@ -35,12 +38,12 @@
             <a>Enquire Now!</a>
         </div>
         <div class="form-container">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email-id" required>
-                <input type="number" placeholder="Enter Your Mobile-No" required>
-                <input type="text" placeholder="Write down your Comments" required>
-                <button class="form-btn" type="submit">Submit</button>
+            <form id="formid1">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+                <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
+                <button type="submit" id="submitbtn">Submit</button>
             </form>
         </div>
     </div>
@@ -50,76 +53,138 @@
         <div class="overview-container">
             <h1>Overview</h1>
             <div class="overview-info">
-                <img class="method1" src="images\twintowers.jpg">
-                <img class="method2" src="images\overview-1.jpg">
+                <img class="method1" src="images/twintowers.jpg">
+                <img class="method2" src="images/overview-1.jpg">
                 <div>
                     <h2>GRANDTHUM</h2>
                     <h4>GREATER NOIDA WEST</h4>
-                <p>Grandthum's approximate 23 acres of land and wide range of opportunities make it unsurprising that people are drawn to it. Before heading to the workspace in the iconic twin towers, you can enjoy fine dining at one restaurant or embark on an adventure through the waterscape or a yacht ride. You can also enjoy fine dining, quick bites with QSR, or movie nights at a five-screen multiplex. Raise a toast as we surpass your expectations while providing much more as we charm you to have the most thrilling ride with Grandthum!</p>
-                <li>Hi-Street Retail Admeasuring over 8 Lakh Sq.ft., Offering more than 100 outlets</li>
-                <li>Iconic twin tower design for office spaces</li>
+                    <p>Grandthum's approximate 23 acres of land and wide range of opportunities make it unsurprising that people are drawn to it. Before heading to the workspace in the iconic twin towers, you can enjoy fine dining at one restaurant or embark on an adventure through the waterscape or a yacht ride. You can also enjoy fine dining, quick bites with QSR, or movie nights at a five-screen multiplex. Raise a toast as we surpass your expectations while providing much more as we charm you to have the most thrilling ride with Grandthum!</p>
+                    <li>Hi-Street Retail Admeasuring over 8 Lakh Sq.ft., Offering more than 100 outlets</li>
+                    <li>Iconic twin tower design for office spaces</li>
                 </div>
-              <div class="sidenav"></div> 
+                <div class="sidenav"></div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="highlights-section" id="highlights">
+        <h1>Highlights</h1>
+        <div class="highlights-container">     
+            <div class="h1-item">
+                <h4>Adventure</h4>
+                <p>Complete retail destination with a thrilling and enjoyable experience at Adventure Island (Amusement park).</p>
+            </div>
+            <div class="h1-item">
+                <h4>Best Destination</h4>
+                <p>The perfect place for short family breaks and a shopaholic's paradise</p>
+            </div>
+            <div class="h1-item">
+                <h4>Hypermarket </h4>
+                <p>A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR.</p>
+            </div> 
+            <div class="h1-item">
+                <h4>Waterfall</h4>
+                <p>Water Showers Located within the shopping center which would help you to relax in the open air.</p>
+            </div>
+            <div class="h1-item">
+                <h4>Retail Outlets</h4>
+                <p>This shopping arcade has more than 100 outlets which includes F & B retail outlets.</p>
+            </div>
+            <div class="h1-item">
+                <h4>Restaurant</h4>
+                <p>Multi cuisine foodcourt with fine dining and specialty snacks and various restaurants.</p>
+            </div>   
+        </div>
+    </div>
+
+    <!-- Amenities Section -->
+    <div class="amenities-container" id="amenities">
+        <h1>Amenities</h1>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides amenities">
+                <li class="glide__slide" style="background-image: url(images/amenities/green-building.jpg);">
+                    <div class="amenities-content">
+                        <h3>IGBC PRE-CERTIFIED GREEN BUILDING</h3>
+                        <p>We understand the impact of carbon footprint on our environment which is why our building stock uses eco-friendly construction material to improve energy and water efficiency to create a healthier and sustainable environment.</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/sky-deck.jpg);">
+                    <div class="amenities-content">
+                        <h3>SKY DECK</h3>
+                        <p>At Grandthum, the essence of design is fluidity, that is allowing movement that breaks barriers and helps create interaction and a sense of community</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/hyper-market.jpg);">
+                    <div class="amenities-content">
+                        <h3>HYPER MARKET</h3>
+                        <p>A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/multiplex.jpg);">
+                    <div class="amenities-content">
+                        <h3>5 SCREEN MULTIPLEX</h3>
+                        <p>We can't talk about an entertainment destination without talking about movies. The multiplex at Grandthum ensures that viewers get their finest movie experience here.</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/amenities/yatch.jpg);">
+                    <div class="amenities-content">
+                        <h3>WATER BODY WITH YACHT</h3>
+                        <p>Imagine a serene evening with the aroma of the food in the air and a pleasant coolness from the water surrounding you. That is how an open air dining experience will be at the Yacht Garden.</p>
+                    </div>
+                </li>
+              </ul>
             </div>
         </div>
     </div>
 
     <!-- Pricelist Section -->
-    <div class="pricelist-container" id="pricelist">
-        <h1>PRICE LIST</h1>
-        <h4>RANDTHUM OFFERS RETAIL SPACE AND OFFICE SPACE WHERE EACH SPACE IS DESIGNATED TO OFFER COMFORT, AND STUNNING VIEWS.</h4>
-        <div class="office-space">
-            <h2>OFFICE SPACES</h2>
-            <h3>Price</h3>
-            <h2>₹40* Lakh Onwards</h2>
-            <p>Work Spaces presents new opportunities. Office Spaces here offer a platform to take your business to next level of growth with an amalgamation of working and networking..</p>
-            <button>Contact Us</button>
+    <div class="pricelist-section"  id="pricelist">
+        <div class="pricelist-container">
+            <h1>Price List</h1>
+            <div class="pricelist-grid">
+                <div class="office-space">
+                    <h2 class="space">OFFICE SPACE</h2>
+                    <h2 class="price">₹40* Lakh Onwards</h2>
+                    <p>Work Spaces presents new opportunities. Office Spaces here offer a platform to take your business to next level of growth with an amalgamation of working and networking..</p>
+                    <button id="contact-btn-1">Contact Us</button>
+                </div>
+                <div class="retail-space">
+                    <h2 class="space">RETAIL SPACE</h2>
+                    <h2 class="price">₹1.08* Cr Onwards</h2>
+                    <p>A landmark in the retail landscape of Greater Noida (West). From a shopping arcade with more than 100 outlets to a hypermarket, from fine dining areas to dedicated spaces...</p>
+                    <button id="contact-btn-2">Contact Us</button>
+                </div> 
+            </div>
         </div>
-        <div class="retail-space">
-            <h2>RETAIL SPACE</h2>
-            <h3>Price</h3>
-            <h2>₹1.08* Cr Onwards</h2>
-            <p>A landmark in the retail landscape of Greater Noida (West). From a shopping arcade with more than 100 outlets to a hypermarket, from fine dining areas to dedicated spaces...</p>
-            <button>Contact Us</button>
-        </div>
+        <div class="sidenav-price"></div>
     </div>
 
-    <!-- Highlights Section -->
-    <div class="highlights-container" id="highlights">
-        <div class="adventure">
-            <h4>Adventure</h4>
-            <p>Complete retail destination with a thrilling and enjoyable experience at Adventure Island (Amusement park).</p>
-        </div>
-        <div class="destination">
-            <h4>Best Destination</h4>
-            <p>The perfect place for short family breaks and a shopaholic's paradise</p>
-        </div>
-        <div class="hypermarket">
-            <h4>Hypermarket </h4>
-            <p>A hypermarket to effectively cater to the needs of the high density of population in Delhi and NCR.</p>
-        </div>
-        <div class="waterfall">
-            <h4>Waterfall</h4>
-            <p>Water Showers Located within the shopping center which would help you to relax in the open air.</p>
-        </div>
-        <div class="outlet">
-            <h4>Retail Outlets</h4>
-            <p>This shopping arcade has more than 100 outlets which includes F & B retail outlets.</p>
-        </div>
-        <div class="restaurant">
-            <h4>restaurant</h4>
-            <p>Multi cuisine foodcourt with fine dining and specialty snacks and various restaurants.</p>
+
+    <!-- Floor Plan Section -->
+    <div class="floor-container" id="floor-plan">
+        <div class="floor-container-heading">
+            <h1>Floor Plan</h1>
+        </div>    
+        <div class="floor-image-container">
+            <img src="images/fp-1.jpeg">
+            <img src="images/fp-2.jpeg">
         </div>
     </div>
-
-    <!-- Ameneties Section -->
-
 
     <!-- Map Section -->
     <div class="map-container" id="map">
-        <h2>Location</h2>
-        <img src="images\map-location.jpg">
+        <div class="sidenav-map"></div>
+        <div class="heading-map">
+            <h1>Location</h1>
+        </div>
+        <div class="map-image">
+            <img src="./images/map.jpeg">
+        </div>     
     </div>
+
+    </section>
 
     <!-- Gallery Section -->
     <section class="gallery-section" id="gallery">
@@ -142,31 +207,23 @@
         </div>
     </section>
 
-    <!-- Floor Plan -->
-    <div class="floor-container" id="floor-plan">
-        <h1>Floor Plan</h1>
-        <div class="floor-image-container">
-            <img src="images\fp-1.jpg">
-            <img src="images\fp-2.jpg">
-        </div>
-    </div>
-
-
+    </footer>
+    
     <!-- Form Popup Section -->
-    <div class="form-popup">
-        <div class="form-content">
+    <div class="form-popup" id="form-popup">
+        <div class="form-content animate">
             <img src="images/form-bg.jpg" alt="">
             <div class="form-heading">
-                <span class="close-modal" title="Close Signup Form">&times;</span>
+                <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
                 <h1>Greater Noida West </h1>
                 <p>Office Space,Retail Space</p>
                 <h2>₹40* Lakh Onwards</h2>
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email-id" required>
-                    <input type="number" placeholder="Enter Your Mobile-No" required>
-                    <input type="text" placeholder="Write down your Comments" required>
-                    <button type="submit" >Submit</button>
+                <form id="formid">
+                    <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
+                    <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
+                    <input type="text" name="comment1" id="comment1" placeholder="Write down your Comments" required>
+                    <button type="submit" id="submitbtn1">Submit</button>
                 </form>
             </div>
         </div>
@@ -207,8 +264,8 @@
             <input type="number" placeholder="Enter Your Mobile-No">
             <input type="text" placeholder="Write down your Comments">
             <button type="submit">Submit</button>
-            <p><a><i class="fa fa-envelope"></i>info@example.commercial
-               <a><i class="fa fa-phone"></i>123-456-7890</p>
+            <!-- <p><a><i class="fa fa-envelope"></i>info@example.commercial
+               <a><i class="fa fa-phone"></i>123-456-7890</p> -->
         </form>
         <!-- <div class="footer-column3">
             <h3>Follow Us</h3>
@@ -227,6 +284,17 @@
 </footer>
 
 </body>
-<script src="script.js"></script>
-</html>
 
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="glider.js"></script>
+<script>
+    const config ={
+        type:'carousel',
+        perView:1,
+        autoplay:2500,
+    }  
+    new Glide('.glide',config).mount()
+</script>
+
+</html>
