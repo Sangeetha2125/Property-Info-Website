@@ -424,6 +424,42 @@ button:hover{
     width: 260px;
 }
 
+/* Connectivity Medium Section */
+.connectivity-medium-section{
+    text-align: center;
+}
+.glide-connectivity .glide__slide{
+    background: linear-gradient(rgba(32, 46, 46, 0.85),rgba(32, 49, 52, 0.85)),url('../images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.connectivity-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.7;
+    margin: 2em auto;
+}
+.connectivity-content h2{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0.8em;
+}
+.connectivity-medium-section h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1.2em;
+    width: 60%;
+    padding-bottom: 0.5em;
+    letter-spacing: 1.2px;
+    border-bottom: 6px solid rgb(5, 121, 142);
+}
+/* .connectivity-medium-section{
+    display: none;
+} */
+
 /* Amenities Section */
 .amenities-container{
     max-width: 1200px;
@@ -1167,6 +1203,7 @@ button:hover{
         padding-right: 3%;
     }
 }
+
 /* Connectivity Section*/
 @media screen and (max-width:1000px) {
     .connectivity-section{
