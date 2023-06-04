@@ -672,6 +672,10 @@ button:hover{
     display: flex;
     justify-content: space-evenly;
 }
+.ground-floor h2,.lower-ground-floor h2{
+    margin: 0.8em;
+    font-size: 1.75em;
+}
 .floor-container img{
     width:550px;
 }
