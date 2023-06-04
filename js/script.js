@@ -67,7 +67,7 @@ var submitbtn=document.getElementById('submitbtn');
     if(senderName!='' && senderEmail!=''  &&senderMobile!='' && senderComment!=''){
     Email.send({
         SecureToken : "909a4ac7-785c-41be-abe5-1c1e983c5022",
-        To : 'sravya6051@gmail.com',
+        To : 'contact@savianmoney.com',
         From : "saviandemo@gmail.com",
         Subject : "Enquiry Request - Grandthum",
         Body : body
@@ -100,7 +100,7 @@ var submitbtn=document.getElementById('submitbtn');
     if(senderName1!='' && senderEmail1!=''  &&senderMobile1!='' && senderComment1!=''){
     Email.send({
         SecureToken : "909a4ac7-785c-41be-abe5-1c1e983c5022",
-        To : 'sravya6051@gmail.com',
+        To : 'contact@savianmoney.com',
         From : "saviandemo@gmail.com",
         Subject : "Enquiry Request - Grandthum",
         Body : body1
@@ -133,7 +133,7 @@ var submitbtn=document.getElementById('submitbtn');
     if(senderName2!='' && senderEmail2!=''  &&senderMobile2!='' && senderComment2!=''){
     Email.send({
         SecureToken : "909a4ac7-785c-41be-abe5-1c1e983c5022",
-        To : 'sravya6051@gmail.com',
+        To : 'contact@savianmoney.com',
         From : "saviandemo@gmail.com",
         Subject : "Enquiry Request - Grandthum",
         Body : body2
@@ -153,4 +153,3 @@ var submitbtn=document.getElementById('submitbtn');
               })  
     );}
   });
-//   contact@savianmoney.com
