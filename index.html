@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        import Swal from 'sweetalert2';
+        const Swal=require('sweetalert2');
+    </script>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
             <a>Enquire Now!</a>
         </div>
         <div class="form-container">
-            <form id="formid1">
+            <form id="formid">
                 <input type="text" id="name" name="name" placeholder="Enter Your Name">
                 <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
                 <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
@@ -262,7 +267,7 @@
                 <h1>Greater Noida West </h1>
                 <p>Office Space,Retail Space</p>
                 <h2>₹40* Lakh Onwards</h2>
-                <form id="formid">
+                <form id="formid1">
                     <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
                     <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
                     <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
@@ -278,6 +283,7 @@
 <script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src="glider.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     const config ={
         type:'carousel',
