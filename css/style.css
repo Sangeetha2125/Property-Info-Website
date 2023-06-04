@@ -827,7 +827,7 @@ button:hover{
 /* Welcome Section */
 @media screen and (max-width:1200px) {
     .welcome-content{
-        width: 100%;
+        width: 90%;
     }
     .heading-container{
         font-size: 2vw;
@@ -1122,5 +1122,91 @@ button:hover{
 @media screen and (max-width:767px) {
     .gallery-section h1{
         width: 60%;
+    }
+}
+
+/* Footer Section */
+@media screen and (max-width:1000px) {
+    .footer-column1{
+        padding-right: 0px;
+    }
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-column1 p a{
+        display: none;
+    }
+    .footer-form{
+        text-align: left;
+    } 
+    .footer-form p a{
+        display: flex;
+        padding-top: 10px;
+    }
+    .footer-form p{
+        flex-direction: row;
+    }
+    .footer-column2 h3{
+        padding-top: 20px;
+    }
+    .footer-form input, .footer-form button{
+        width: 350px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1300px){
+    .footer-column1{
+        padding-right: 5%;
+    }
+    .footer-form input, .footer-form button{
+        width: 250px;
+    }
+}
+@media screen and (min-width:1300px) and (max-width:1400px){
+    .footer-column1{
+        padding-right: 3%;
+    }
+}
+/* Connectivity Section*/
+@media screen and (max-width:1000px) {
+    .connectivity-section{
+        display: none;
+    }
+    .connectivity-section2{
+        display: flex;
+    }
+    .connectivity-section2 div span{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .connectivity2{
+        width: 900px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .connectivity2 div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .connectivity2 span{
+        width: 100%;
+    }
+    .connectivity-wrap2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10% auto;
+    }
+    .connectivity2 div span{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1300px){
+    .connectivity-wrap img{
+        width: 160px;
     }
 }

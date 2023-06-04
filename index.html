@@ -218,6 +218,52 @@
       </div>
     </section>
 
+    <!-- Connectivity Medium Section -->
+    <div class="connectivity-medium-section" id="connectivity">
+        <h1>Connectivity</h1>
+        <div class="glide-connectivity">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide" style="background-image: url(images/bg.jpg);">
+                    <div class="connectivity-content">
+                        <h2>Closed Proximity</h2>
+                        <img src="images/mobDotLine.png">
+                        <h2>Proposed Metro Station</h2>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/bg.jpg);">
+                    <div class="connectivity-content">
+                        <h2>Near</h2>
+                        <img src="images/mobDotLine.png">
+                        <h2>Upcoming Noide International Airport</h2>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/bg.jpg);">
+                    <div class="connectivity-content">
+                        <h2>16 km</h2>
+                        <img src="images/mobDotLine.png">
+                        <h2>Sector 18 Noida</h2>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/bg.jpg);">
+                    <div class="connectivity-content">
+                        <h2>23km Approx</h2>
+                        <img src="images/mobDotLine.png">
+                        <h2>Akshardham temple</h2>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/bg.jpg);">
+                    <div class="connectivity-content">
+                        <h2>Closed Proximity</h2>
+                        <img src="images/mobDotLine.png">
+                        <h2>Multinational and Corporates</h2>
+                    </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Map Section -->
     <div class="map-container" id="map">
         <div class="sidenav-map"></div>
@@ -312,6 +358,13 @@
         autoplay:2500,
     }  
     new Glide('.glide',config).mount()
+
+    const configConnectivity={
+        type:'carousel',
+        perView:1,
+        autoplay:2500,
+    }
+    new Glide('.glide-connectivity',config).mount()
 </script>
 
 </html>
