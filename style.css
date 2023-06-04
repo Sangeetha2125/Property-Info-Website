@@ -339,13 +339,17 @@ html{
     font-size: 30px;
     padding-bottom: 20px;
 }
+.footer-column1 p a i{
+    padding-top: 15px;
+}
 .footer-form{
     text-align: center;
 }
 .footer-form input, .footer-form button{
     width: 450px;
     padding: 8px;
-    margin: 10px 0px;
+    margin: 8px 0px;
+    border-radius: 8px;
 }
 .footer-form input{
     border: 2px solid rgb(2, 101, 118);
@@ -366,6 +370,9 @@ html{
 .footer-form button:active{
 	transform: scale(0.95);
 }
+.footer-form p a{
+    display: none;
+}
 .footer-bottom{
     padding: 20px;
     text-align: center;
@@ -383,6 +390,37 @@ html{
     .header p:hover::after{
         transform: scaleX(1);
     }  
+}
+@media screen and (max-width:1250px){
+    .footer-column1{
+        padding-right: 0px;
+    }
+    .footer-column{
+        /* margin: 50px 0px 0px 0px; */
+        display: flex;
+        flex-direction: column;
+        /* padding: 80px; */
+    }
+    .footer-form input, .footer-form button{
+        width: 400px;
+    }
+    .footer-form{
+        text-align: left;
+    }
+    .footer-column1 p a{
+        display: none;
+    }
+    .footer-form p a{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+    .footer-form p{
+        flex-direction: row;
+    }
+    .footer-column2 h3{
+        padding-top: 20px;
+    }
 }
 @media screen and (max-width:1000px) {
     .header{
