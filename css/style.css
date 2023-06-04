@@ -13,6 +13,9 @@
 html{
     scroll-behavior: smooth;
 }
+button:hover{
+    cursor: pointer;
+}
 
 /* Navbar Section */
 .header{
@@ -168,6 +171,21 @@ html{
     text-align: end;
     margin: 0.4em 0.3em;
     font-size: 2.5em;
+}
+.close-modal:hover{
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}   
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }
 .form-popup{
     display: none;
@@ -353,6 +371,7 @@ html{
     width: 100%;
     border-radius: 1.5%;
     position: relative;
+    margin-bottom: 2.5em;
 }
 .glide__slide:hover{
     filter: grayscale(0.5);
@@ -374,6 +393,7 @@ html{
     padding: 2em;
     line-height: 1.5;
     font-size: 1.15em;
+    letter-spacing: 1.35px;
     text-align: justify;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -381,6 +401,85 @@ html{
 }
 .amenities-content h3,.amenities-content p{
     color: white;
+}
+
+/* Pricelist Section */
+.pricelist-section{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(227, 241, 253); 
+    padding: 3.5em;
+}
+.pricelist-container{
+    max-width: 1100px;
+    margin:0 auto;
+    text-align: center;
+}
+.pricelist-container h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1.2em;
+    width: 30%;
+    padding-bottom: 0.5em;
+    letter-spacing: 1.2px;
+    border-bottom: 6px solid rgb(5, 121, 142);
+}
+.pricelist-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2.5em;
+}
+.pricelist-grid div{
+    border: 2px solid;
+    padding: 1.5em;
+    border-radius: 12px;
+    background-color: white;
+}
+.office-space,.retail-space{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.office-space{
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.85)),url("../images/pricelist/office-space.jpg");
+}
+.retail-space{
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.85)),url("../images/pricelist/retail-space.jpg");
+}
+.office-space .space,.retail-space .space{
+    padding: 0.3em;
+}
+.office-space .price,.retail-space .price{
+    display: inline-block;
+    color:rgb(5, 121, 142);
+    padding: 0.5em;
+}
+.office-space p,.retail-space p{
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.25em;
+}
+.office-space button,.retail-space button{
+    padding: 12px 16px;
+    font-size: 1.15em;
+    color: white;
+    border-radius: 12px;
+    margin: .5em;
+    background-color: rgb(5, 121, 142);
+}
+.office-space button:hover,.retail-space button:hover{
+    cursor: pointer;
+}
+.sidenav-price{
+    height: 100%;
+    width: 3.5%; 
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    bottom:0;
+    background-color: rgb(5, 121, 142);  
 }
 
 /* Footer Section */
@@ -495,6 +594,6 @@ html{
 }
 
 
-.floor-container,.map-container,.highlights-container,.pricelist-container,footer{
+.floor-container,.map-container,.highlights-container,footer{
     display: none;
 }
