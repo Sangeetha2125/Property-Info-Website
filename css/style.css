@@ -31,7 +31,7 @@ button:hover{
 .header nav{
     display: flex;
     justify-content: space-between;
-    width: 67%;
+    width: 70%;
     font-size: 1.3em;
 }
 .header nav p{
@@ -790,7 +790,7 @@ button:hover{
 /* Media Queries */
 
 /* Navbar Section*/
-@media screen and (min-width:1300px) {
+@media screen and (min-width:1400px) {
     .header p::after{
         content: "";
         display: block;
@@ -803,7 +803,7 @@ button:hover{
         transform: scaleX(1);
     }  
 }
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1400px) {
     .header{
         position: relative;
     }
